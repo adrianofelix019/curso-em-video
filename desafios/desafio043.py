@@ -11,7 +11,7 @@ e mostre seu status, de acordo com a tabela abaixo:
 
 peso = float(input("Informe seu peso em Kg: "))
 altura = float(input("Informe a sua altura em metros: "))
-imc = peso / (altura * altura)
+imc = peso / (altura**2)
 
 print(f"Seu IMC é de {imc:.2f}")
 
