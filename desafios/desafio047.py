@@ -1,0 +1,6 @@
+"""
+Esse script mostra na tela todos os números pares que estão 1 e 50.
+"""
+
+for num in range(2, 51, 2):
+    print(num)
