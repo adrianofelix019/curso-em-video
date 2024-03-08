@@ -1,5 +1,5 @@
 """
-Esse script ler um valor em metros e mostra na tela a conversão para centimetros
+Esse script lê um valor em metros e mostra na tela a conversão para centimetros
 e milimetros.
 """
 
