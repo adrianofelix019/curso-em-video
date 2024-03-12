@@ -4,8 +4,8 @@ e milimetros.
 """
 
 
-metros = float(input('Informe um valor em metros: '))
-centimetros = metros * 100
-milimetros = metros * 1000
-print('{}m convertido para centimetros vale {}cm.'.format(metros, centimetros))
-print('{}m convertido para milimetros vale {}mm'.format(metros, milimetros))
+medida = float(input('Informe um valor em metros: '))
+centimetros = medida * 100
+milimetros = medida * 1000
+print('{}m convertido para centimetros vale {:.0f}cm.'.format(medida, centimetros))
+print('{}m convertido para milimetros vale {:.0f}mm'.format(medida, milimetros))
