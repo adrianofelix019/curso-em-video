@@ -4,5 +4,5 @@ com Santo.
 """
 
 nome = input('Informe o nome da cidade: ')
-print('A cidade começa com Santo?')
+print('A cidade começa com Santo: ', end='')
 print(nome.startswith('Santo'))
