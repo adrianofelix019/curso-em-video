@@ -10,8 +10,12 @@ centena: 8
 milhar: 1
 """
 
-num = input('Digite um número: ')
-print('Unidade: {}'.format(num[3]))
-print('Dezena: {}'.format(num[2]))
-print('Centena: {}'.format(num[1]))
-print('Milhar: {}'.format(num[0]))
+num = int(input('Digite um número: '))
+unidade = num // 1 % 10
+dezena = num // 10 % 10
+centena = num // 100 % 10
+milhar = num // 1000 % 10
+print('Unidade: {}'.format(unidade))
+print('Dezena: {}'.format(dezena))
+print('Centena: {}'.format(centena))
+print('Milhar: {}'.format(milhar))
