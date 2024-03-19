@@ -3,7 +3,7 @@ Programa para exibir o primeiro e última nome.
 """
 
 
-nome = input('Informe seu nome: ')
+nome = input('Informe seu nome: ').strip()
 primeiro_nome = nome.split()[0]
 ultimo_nome = nome.split()[-1]
 print('Seu primeiro nome é {}'.format(primeiro_nome))
