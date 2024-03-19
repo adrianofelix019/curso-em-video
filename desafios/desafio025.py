@@ -4,6 +4,6 @@ nome.
 """
 
 
-nome = input('Escreva seu nome: ')
+nome = input('Escreva seu nome: ').strip()
 print('Você tem Silva no nome? ', end='')
 print('silva' in nome.lower())
