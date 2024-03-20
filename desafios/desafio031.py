@@ -12,4 +12,5 @@ if distancia <= 200:
 else:
     valor = distancia * 0.45
 
-print('Para uma viagem de {}Km o valor da passagem será R${:.2f}'.format(distancia, valor))
+print('Para uma viagem de {}Km'.format(distancia))
+print('O valor da passagem será R${:.2f}'.format(valor))
