@@ -1,12 +1,18 @@
-r1 = int(input("Enter the first side: "))
-r2 = int(input("Enter the second side: "))
-r3 = int(input("Enter the third side: "))
+"""
+Esse programa lê os três lados de um possível triângulo e informa na tela se é
+possível formar-lo com os dados fornecidos.
+"""
 
-condition1 = (r2 - r3) < r1 < r2 + r3
-condition2 = (r3 - r1) < r2 < r3 + r1
-condition3 = (r1 - r2) < r3 < r1 + r2
 
-if condition1 and condition2 and condition3:
-    print(f"{r1}, {r2} and {r3} can make a triangle.")
+l1 = int(input('Informe o primeiro lado: '))
+l2 = int(input('Informe o segundo lado: '))
+l3 = int(input('Informe o terceiro lado: '))
+
+condicao1 = (l2 - l3) < l1 < l2 + l3
+condicao2 = (l3 - l1) < l2 < l3 + l1
+condicao3 = (l1 - l2) < l3 < l1 + l2
+
+if condicao1 and condicao2 and condicao3:
+    print(f"{l1}, {l2} e {l3} podem formar um triângulo.")
 else:
-    print(f"{r1}, {r2} and {r3} cannot make a triangle.")
+    print(f"{l1}, {l2} e {l3} não podem formar um triângulo.")
