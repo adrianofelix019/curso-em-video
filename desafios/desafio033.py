@@ -1,19 +1,24 @@
-n1 = int(input('Enter the first number: '))
-n2 = int(input('Enter the second number: '))
-n3 = int(input('Enter the third number: '))
+"""
+Esse programa lê 3 números pelo teclado a mostra na tela o maior e o menor.
+"""
 
-smallest = n1
-higher = n1
 
-if n2 > higher and n2 > n3:
-    higher = n2
-elif n3 > higher:
-    higher = n3
+n1 = int(input('Digite o primeiro número: '))
+n2 = int(input('Digite o segundo número: '))
+n3 = int(input('Digite o terceiro número: '))
 
-if n2 < smallest and n2 < n3:
-    smallest = n2
-elif n3 < smallest:
-    smallest = n3
+menor = n1
+maior = n1
 
-print(f'The higher number is {higher}')
-print(f'The smallest number is {smallest}')
+if n2 > maior and n2 > n3:
+    maior = n2
+elif n3 > maior:
+    maior = n3
+
+if n2 < menor and n2 < n3:
+    menor = n2
+elif n3 < menor:
+    menor = n3
+
+print('O maior número é {}'.format(maior))
+print('O menor número é {}'.format(menor))
