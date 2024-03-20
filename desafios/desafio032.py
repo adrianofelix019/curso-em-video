@@ -1,8 +1,13 @@
-year = int(input('Enter a year: '))
+"""
+Programa para verificar se um ano é bissexto.
+"""
 
-if year % 4 == 0 and year % 100 != 0:
-    print(f'{year} is bissext.')
-elif year % 400 == 0:
-    print(f'{year} is bissext.')
+
+ano = int(input('Informe o ano para verificar se é bissexto: '))
+
+if ano % 4 == 0 and ano % 100 != 0:
+    print(f'{ano} é bissexto.')
+elif ano % 400 == 0:
+    print(f'{ano} é bissexto.')
 else:
-    print(f'{year} is not bissext.')
+    print(f'{ano} não é bissexto.')
