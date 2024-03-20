@@ -1,9 +1,17 @@
-salary = float(input("Enter your salary: "))
-increase = 0
+"""
+Programa para calcular o aumento de salário de um funcionário.
+- Salários de até 1250 recebem aumento de 15%
+- Salários maiores que 1250 recebem aumento de 10%
+"""
 
-if salary > 1250:
-    increase = salary * 0.1
+
+salario = float(input('Digite o salário: '))
+aumento = 0
+
+if salario > 1250:
+    aumento = salario * 0.1
 else:
-    increase = salary * 0.15
+    aumento = salario * 0.15
 
-print(f"The salary increase is U${increase} and the new salary is U${salary+increase}")
+print('O aumenta será de R${:.2f}'.format(aumento))
+print('O novo salário será de R${:.2f}'.format(salario + aumento))
