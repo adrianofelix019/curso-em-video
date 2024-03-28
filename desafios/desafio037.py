@@ -1,13 +1,13 @@
 """
-Escreva um programa que leia um número inteiro qualquer e peça para o usuário
-escolher qual será a base de conversão:
+Esse programa lê um número inteiro qualquer e pede ao usuário para escolher
+qual será a base de conversão:
 1 - para binário
 2 - para octal
 3 - hexadecimal
 """
 
 num = int(input("Informe um número: "))
-base = int(input("""Para que base deesja converter o número?
+base = int(input("""Para que base deseja converter o número?
 1 - Binário
 2 - Octal
 3 - Hexadecimal
