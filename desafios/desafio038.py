@@ -1,5 +1,5 @@
 """
-Escreva um programa que leia dois números inteiros e compare-os, mostrando
+Esse programa lê dois números inteiros e compara-os, mostrando
 na tela uma mensagem:
 - O primeiro valor é maior
 - O segundo valor é maior
