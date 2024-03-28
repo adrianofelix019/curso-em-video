@@ -2,7 +2,7 @@ import random
 from time import sleep
 
 """
-Crie um programa que faça o computador jogar Jokenpô com você.
+Esse programa joga JO-KEN-PO com você.
 """
 itens = ('pedra', 'papel', 'tesoura')
 
