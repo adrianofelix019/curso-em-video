@@ -1,5 +1,5 @@
 """
-Elabora um programa que calcule o valor a ser pago por um produto considerando
+Programa que calcula o valor a ser pago por um produto considerando
 seu preço normal e condição de pagamento:
 
 - À vista dinheiro/cheque: 10% de desconto
