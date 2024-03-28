@@ -1,6 +1,6 @@
 """
-Desenvolva um lógica que leia o peso e altura de uma pessoa, calcule seu IMC
-e mostre seu status, de acordo com a tabela abaixo:
+Esse programa lê o peso e altura de uma pessoa, calcula seu IMC
+e mostra seu status, de acordo com a tabela abaixo:
 
 - Abaixo de 18.5: Abaixo do peso
 - Entre 18.5 e 25: Peso ideal
