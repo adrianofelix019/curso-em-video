@@ -6,7 +6,7 @@ qual será a base de conversão:
 3 - hexadecimal
 """
 
-num = int(input("Informe um número: "))
+num = int(input("Informe um número inteiro: "))
 base = int(input("""Para que base deseja converter o número?
 1 - Binário
 2 - Octal
@@ -19,7 +19,8 @@ elif base == 2:
     num_convertido = oct(num)
 elif base == 3:
     num_convertido = hex(num)
-
+else:
+    print("Opção inválida, tente novamente!")
 
 # fatiamento para remover o prefixo da base
 print(f"O número {num} convertido é {num_convertido[2:]}")
