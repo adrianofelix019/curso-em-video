@@ -11,16 +11,19 @@ lado1 = int(input("Primeiro lado: "))
 lado2 = int(input("Segundo lado: "))
 lado3 = int(input("Terceiro lado: "))
 
-if (lado1 + lado2 > lado3) and (lado2 + lado3 > lado1) and (lado1 + lado3 > lado2):
+if (lado1 + lado2 > lado3) \
+        and (lado2 + lado3 > lado1) \
+        and (lado1 + lado3 > lado2):
     print(f"É possível formar um triângulo com ({lado1}, {lado2}, {lado3})")
 
     if lado1 == lado2 == lado3:
         tipo_de_triangulo = "equilátero"
-    elif lado1 == lado2 or lado1 == lado3 or lado2 == lado3:
-        tipo_de_triangulo = "isósceles"
-    else:
+    elif lado1 != lado2 != lado3 != lado1:
         tipo_de_triangulo = "escaleno"
+    else:
+        tipo_de_triangulo = "isósceles"
 
     print(f"O triângulo formado será {tipo_de_triangulo}.")
 else:
-    print(f"Não é possível formar um triângulo com ({lado1}, {lado2}, {lado3})")
+    print(f"Não é possível formar um triângulo com \
+({lado1}, {lado2}, {lado3})")
