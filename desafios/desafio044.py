@@ -24,12 +24,14 @@ elif metodo_de_pagamento == 2:
 elif metodo_de_pagamento == 3:
     preço_final = preço
     parcela = preço_final / 2
-    print(f'Sua compra de R${preço_final:.2f} será dividida em 2x de {parcela:.2f} sem juros!')
+    print(f'Sua compra de R${preço_final:.2f} será dividida em 2x \
+de {parcela:.2f} sem juros!')
 elif metodo_de_pagamento == 4:
     preço_final = preço * 1.2
     parcelas = int(input('Em quantas vezes deseja pagar? '))
     parcela = preço_final / parcelas
-    print(f'Sua compra será dividida em {parcelas}x de {parcela:.2f} com juros.')
+    print(f'Sua compra será dividida em {parcelas}x de {parcela:.2f} com \
+juros.')
 else:
     preço_final = preço
     print('Opção de pagamento inválida, tente novamente.')
