@@ -1,6 +1,6 @@
-soma = 0
+s = 0
 
-for c in range(0, 3):
-    numero = int(input('Informe um valor: '))
-    soma += numero
-print(f'O somatório de todos os valores foi {soma}')
+for c in range(0, 4):
+    n = int(input("Digite um número: "))
+    s += n
+print("O somatorio de todos os valores foi {}".format(s))
