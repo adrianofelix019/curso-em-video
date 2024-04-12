@@ -1,11 +1,11 @@
 """
-Esse script faz uma contagem regressiva de 10 até 0 e mostra uma mensagem de
-feliz ano novo.
+Esse script mostra na tela a soma de todos os números ímpares que são multiplos
+de 3 e se encontram no intervalo entre 1 e 500
 """
+soma = 0
+for c in range(1, 501, 2):
+    if c % 3 == 0:
+        soma += c
 
-from time import sleep
-
-for c in range(10, 0, -1):
-    print("{}!".format(c))
-    sleep(1)
-print("Feliz ano novo! 🥳🎉🎊")
+print("A soma de todos os número ímpares e multiplos de 3 entre 1 e 500")
+print("É igual a {}".format(soma))
