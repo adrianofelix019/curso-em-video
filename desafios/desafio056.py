@@ -9,12 +9,14 @@ soma_das_idades = 0
 nome_do_homem_mais_velho = ''
 idade_do_homem_mais_velho = 0
 mulheres_maiores_de_20 = 0
+
 for c in range(0, 4):
     indice = c + 1
 
-    nome = str(input('Informe o nome {}: '.format(indice)))
-    idade = int(input('Informe a idade {}: '.format(indice)))
-    sexo = str(input('Informe o sexo {}: '.format(indice)))
+    print('----- {}ª PESSOA -----'.format(indice))
+    nome = str(input('Nome: '))
+    idade = int(input('Idade: '))
+    sexo = str(input('Sexo [M/F] : '))
 
     if sexo == 'm':
         if c == 0:
