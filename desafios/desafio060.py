@@ -1,9 +1,11 @@
 num = int(input('Informe um número inteiro para calcular seu fatorial: '))
-resultado = 1
-c = num
+contador = num
+fatorial = 1
 
-while c > 1:
-    resultado *= c
-    c -= 1
+while contador > 0:
+    print(contador, end='')
+    print(' x ' if contador > 1 else ' = ', end='')
+    fatorial *= contador
+    contador -= 1
 
-print('{}! é igual a {}'.format(num, resultado))
+print(fatorial)
