@@ -4,6 +4,6 @@ decimo = primeiro + (10 - 1) * razao
 
 contador = primeiro
 while contador <= decimo:
-    print(contador, end=' -> ')
+    print(contador, end=' ➝  ')
     contador += razao
 print('FIM')
