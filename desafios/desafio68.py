@@ -7,7 +7,11 @@ print('-='*25)
 total_vitorias = 0
 while True:
     valor = int(input('Digite um valor: '))
-    jogador_par_ou_impar = str(input('Par ou Ímpar [P/I]: ')).strip().lower()
+    jogador_par_ou_impar = ' '
+
+    while jogador_par_ou_impar not in 'pi':
+        jogador_par_ou_impar = str(input('Par ou impar? [P/I] ')).lower()[0]
+
     computador_par_ou_impar = 'i' if jogador_par_ou_impar == 'p' else 'p'
     valor_computador = randint(0, 10)
     total = valor + valor_computador
