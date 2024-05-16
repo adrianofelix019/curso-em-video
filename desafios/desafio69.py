@@ -3,6 +3,9 @@ homens = 0
 mulheres_com_menos_de_20_anos = 0
 
 while True:
+    print('-'*60)
+    print(f'{"CADASTRE UMA PESSOA":^60}')
+    print('-'*60)
     idade = int(input('Informe sua idade: '))
     sexo = str(input('Informe seu sexo (M/F): '))
     continuar = str(input('Quer continuar? (S/N) ')).strip()
