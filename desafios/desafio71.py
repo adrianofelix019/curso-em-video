@@ -1,16 +1,27 @@
 print('='*50)
 print(f'{'BANCO CEV':^50}')
 print('='*50)
+
 valor = int(input('Quanto quer sacar? R$'))
+total = valor
+cedula_atual = 50
+total_de_cedula = 0
 
-cinquenta = valor // 50
-vinte = valor % 50 // 20
-dez = valor % 50 % 20 // 10
-um = valor % 50 % 20 % 10 // 1
+while True:
+    if total >= cedula_atual:
+        total -= cedula_atual
+        total_de_cedula += 1
+    else:
+        if total_de_cedula > 0:
+            print(f'Total de {total_de_cedula} cedulas de R${cedula_atual}')
 
-print(f'Total de {cinquenta} cédulas de R$50')
-print(f'Total de {vinte} cédulas notas de R$20')
-print(f'Total de {dez} cédulas notas de R$10')
-print(f'Total de {um} cédulas notas de R$1')
-print('='*50)
-print('Volte sempre ao banco CEV! Tenha um bom dia!')
+        if cedula_atual == 50:
+            cedula_atual = 20
+        elif cedula_atual == 20:
+            cedula_atual = 10
+        elif cedula_atual == 10:
+            cedula_atual = 1
+        total_de_cedula = 0
+
+        if total == 0:
+            break
