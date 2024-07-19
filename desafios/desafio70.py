@@ -27,7 +27,9 @@ while True:
         nome_mais_barato = nome
         preco_mais_barato = valor
 
-    continuar = str(input('Quer continuar? (S/N): ')).strip().lower()
+    continuar = ' '
+    while continuar not in 'sn':
+        continuar = str(input('Quer continuar? (S/N): ')).strip().lower()[0]
 
     if continuar == 'n':
         break
