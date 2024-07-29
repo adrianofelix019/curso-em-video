@@ -7,8 +7,8 @@ nums = (n1, n2, n3, n4)
 print(f'Você digitou os valores: {nums}')
 print(f'O número 9 apareceu {nums.count(9)} vezes.')
 
-if nums.count(3) != 0:
-    print(f'O valor 3 está na posição {nums.index(3) + 1}')
+if 3 in nums:
+    print(f'O valor 3 está na {nums.index(3) + 1}ª posição')
 else:
     print(f'O valor 3 não foi digitado.')
 
