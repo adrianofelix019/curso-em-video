@@ -6,7 +6,7 @@ while True:
     numero = int(input('Digite um número: '))
     numeros.append(numero)
 
-    continuar = str(input('Deseja continuar? (S/N) ')).strip().lower()
+    continuar = str(input('Deseja continuar? (S/N) ')).strip().lower()[0]
 
     if continuar == 'n':
         break
