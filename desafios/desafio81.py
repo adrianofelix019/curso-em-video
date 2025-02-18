@@ -9,15 +9,15 @@ while True:
         break
 
 print(f'{'-='*30} Algumas Informações {'-='*30}')
-print(f'Os valores informados foram: {numeros}')
 print(f'Ao todo foram informados {len(numeros)} valores')
+print(f'Os valores informados foram: {numeros}')
 lista_original = numeros[:]
 numeros.sort(reverse=True)
 print(f'A lista em ordem decrescente: {numeros}')
 
 if 5 in numeros:
     print(f'O valor 5 foi digitado {numeros.count(5)} vez(es)')
-    print('Nos indices: ', end='')
+    print('No(s) indice(s): ', end='')
     for indice, numero in enumerate(lista_original):
         if numero == 5:
             print(f'{indice} ', end='')
