@@ -1,14 +1,19 @@
-valores = []
-continuar = 's'
+numeros = []
 
-while continuar == 's':
-    valor = int(input('Digite um valor: '))
-    if valor not in valores:
-        valores.append(valor)
-        print('Valor adicionado com sucesso!')
-    else:
-        print('Valor duplicado! Não vou adicionar...')
-    continuar = input('Deseja continuar? [S/N]').lower().strip()[0]
+while True:
+  numero = int(input('Digite um valor: '))
 
-valores.sort()
-print(f'O valores informados foram {valores}')
+  if numero not in numeros:
+    numeros.append(numero)
+    print('Valor adicionado com sucesso.')
+  else:
+    print('Valor duplicado, não vou adicionar.')
+
+  resposta = str(input('Quer continuar? [S/N] ')).strip()[0]
+
+  if resposta in 'Nn':
+    break
+
+print('-='*30)
+numeros.sort()
+print(f'Você digitou os números {numeros}.')
