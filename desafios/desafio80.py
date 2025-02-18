@@ -15,4 +15,5 @@ for c in range(5):
         valores.insert(indice, valor)
         print(f'O valor {valor} foi inserido no indice {indice}')
 
+print('-='*30)
 print(f'Os valores digitados em ordem foram: {valores}')
