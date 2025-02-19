@@ -17,6 +17,7 @@ for numero in numeros:
     else:
         impares.append(numero)
 
+print('-=' * 30)
 print(f'Todos os números digitados foram: {numeros}')
 print(f'Os números pares digitados foram: {pares}')
 print(f'Os números ímpares digitados foram: {impares}')
