@@ -23,3 +23,9 @@ print('-'*33)
 for indice, aluno in enumerate(alunos):
     media = (aluno[1] + aluno[2]) / 2
     print(f'{indice+1:<3}{aluno[0]:<15}{media:<15}')
+
+while True:
+    indice = int(input('Mostrar notas de qual aluno? (999 interrompe) '))
+    if indice == 999:
+        break
+    print(f'As notas de {alunos[indice][0]} são [{alunos[indice][1]}, {alunos[indice][2]}]')
