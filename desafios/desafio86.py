@@ -1,8 +1,9 @@
-matriz = [[],[],[]]
+matriz = [[], [], []]
 
 for linha in range(3):
     for coluna in range(3):
-        matriz[linha].append(int(input(f'Digite o valor [{linha}, {coluna}]: ')))
+        valor = int(input(f'Digite o valor [{linha}, {coluna}]: '))
+        matriz[linha].append(valor)
 
 print('-='*30)
 
