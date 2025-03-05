@@ -1,4 +1,4 @@
-matriz = [[],[],[]]
+matriz = [[], [], []]
 soma_pares = 0
 soma_terceira_coluna = 0
 maior_valor_segunda_linha = 0
