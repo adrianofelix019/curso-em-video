@@ -20,5 +20,6 @@ if carteira_de_trabalho != 0:
     funcionario['salario'] = float(input('Salário: '))
 
 print('-=' * 50)
+print('Dados:')
 for k, v in funcionario.items():
-    print(f'{k} tem o valor {v}')
+    print(f'...{k} tem o valor {v}')
