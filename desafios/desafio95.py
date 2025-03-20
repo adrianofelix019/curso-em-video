@@ -21,10 +21,11 @@ while True:
     if continuar == 'n':
         break
 
-print(f'{"COD":<5}{"NOME":<20}{"GOLS":<10}{"TOTAL"}')
-print('-'*40)
+print('-'*50)
+print(f'{"COD":<5}{"NOME":<20}{"GOLS":<15}{"TOTAL"}')
+print('-'*50)
 for indice, jogador in enumerate(jogadores):
-    print(f'{indice:<3}{jogador["nome"]:<20}{str(jogador["gols"]):<10}{jogador["total"]:>3}')
+    print(f'{indice:<3}{jogador["nome"]:<20}{str(jogador["gols"]):<15}{jogador["total"]:>3}')
 
 while True:
     consulta = int(input('Mostrar dados de qual jogador? (999 para sair) '))
