@@ -5,7 +5,6 @@ def escreva(texto):
     print('~' * comprimento)
 
 
-
 escreva('Curso de Python')
 escreva('Git')
 escreva('the quick fox jumps over the lazy dog')

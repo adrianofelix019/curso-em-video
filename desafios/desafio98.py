@@ -16,7 +16,6 @@ def contador(inicio, fim, passo):
 
     print(f'Contagem de {inicio} até {fim} de {abs(passo)} em {abs(passo)}.')
 
-
     for c in range(inicio, fim + acrescimo, passo):
         print(f'{c} ', end='', flush=True)
         sleep(.5)
@@ -27,7 +26,7 @@ def contador(inicio, fim, passo):
 print('~'*25)
 contador(1, 10, 1)
 print('~'*25)
-contador(10, 0, 1)
+contador(10, 0, 2)
 print('~'*25)
 print('Agora é sua vez de personalizar a contagem!')
 inicio = int(input('Início: '))
