@@ -23,6 +23,8 @@ def py_help():
         print(fundo_branco)
         help(comando)
         print(limpa)
+        
+    print('-' * 50)
     print('Saindo...')
     sleep(0.5)
 
