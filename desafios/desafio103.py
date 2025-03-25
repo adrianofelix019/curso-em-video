@@ -11,5 +11,5 @@ def ficha(nome, qtd_gols):
 
 
 nome = str(input('Nome do jogador: '))
-gols = input('Número de gols: ')
+gols = str(input('Número de gols: '))
 ficha(nome, gols)
