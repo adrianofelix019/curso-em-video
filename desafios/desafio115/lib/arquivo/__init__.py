@@ -23,4 +23,4 @@ def ler_arquivo(nome_arquivo):
         print(f'Não foi possível ler o arquivo "{nome_arquivo}".')
     else:
         cabecalho('pessoas cadastradas')
-        print(arquivo.readlines())
+        print(arquivo.read())
