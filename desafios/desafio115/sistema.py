@@ -1,3 +1,4 @@
+from lib.dados import cadastrar_pessoa
 from lib import interface
 from lib.arquivo import arquivo_existe, criar_arquivo, ler_arquivo
 from time import sleep
@@ -16,7 +17,8 @@ while True:
     if resposta == 1:
         ler_arquivo(NOME_ARQUIVO)
     elif resposta == 2:
-        print('Opção 2')
+        pessoa = cadastrar_pessoa()
+        print(f'Dados da pessoa: {pessoa}')
     elif resposta == 3:
         interface.cabecalho('Saindo do Sistema... Até logo.')
         break
