@@ -1,6 +1,6 @@
 from lib.dados import cadastrar_pessoa
 from lib import interface
-from lib.arquivo import arquivo_existe, criar_arquivo, ler_arquivo
+from lib.arquivo import *
 from time import sleep
 
 NOME_ARQUIVO = 'banco_de_dados.txt'
@@ -18,7 +18,7 @@ while True:
         ler_arquivo(NOME_ARQUIVO)
     elif resposta == 2:
         pessoa = cadastrar_pessoa()
-        print(f'Dados da pessoa: {pessoa}')
+        escrever_no_arquivo(pessoa, NOME_ARQUIVO)
     elif resposta == 3:
         interface.cabecalho('Saindo do Sistema... Até logo.')
         break

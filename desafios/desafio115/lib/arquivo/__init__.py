@@ -24,3 +24,15 @@ def ler_arquivo(nome_arquivo):
     else:
         cabecalho('pessoas cadastradas')
         print(arquivo.read())
+
+def escrever_no_arquivo(dados, nome_do_arquivo):
+    try:
+        nome = dados['nome']
+        idade = dados['idade']
+
+        arquivo = open(nome_do_arquivo, 'a')
+        arquivo.write(f'{nome};{idade}')
+    except Exception:
+        print('Não foi possível escrever os dados no arquivo de banco de dados.')
+    else:
+        print(f'{nome} cadastrado(a) com sucesso.')
