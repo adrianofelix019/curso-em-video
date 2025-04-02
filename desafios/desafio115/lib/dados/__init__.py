@@ -11,11 +11,20 @@ def leia_int(mensagem):
             return valor
 
 
+def nome_valido(nome):
+    for letra in nome:
+        if letra.isalpha() or letra.isspace():
+            continue
+        else:
+            return False
+    return True
+
+
 def leia_nome(mensagem):
     while True:
         try:
             nome = str(input(mensagem))
-            if nome.isalpha():
+            if nome_valido(nome):
                 return nome
             else:
                 print('\033[31mPor favor, informe um nome válido.\033[0m')
