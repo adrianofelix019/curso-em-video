@@ -15,7 +15,7 @@ while True:
     resposta = interface.menu(['Ver Pessoas Cadastradas', 'Cadastrar Nova Pessoa', 'Sair do Sistema'])
 
     if resposta == 1:
-        ler_arquivo(NOME_ARQUIVO)
+        interface.formatar_dados(ler_arquivo(NOME_ARQUIVO))
     elif resposta == 2:
         pessoa = cadastrar_pessoa()
         escrever_no_arquivo(pessoa, NOME_ARQUIVO)

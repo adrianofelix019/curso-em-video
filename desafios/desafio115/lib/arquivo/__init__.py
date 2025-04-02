@@ -23,7 +23,8 @@ def ler_arquivo(nome_arquivo):
         print(f'Não foi possível ler o arquivo "{nome_arquivo}".')
     else:
         cabecalho('pessoas cadastradas')
-        print(arquivo.read())
+        return arquivo.read().split('\n')
+
 
 def escrever_no_arquivo(dados, nome_do_arquivo):
     try:
@@ -31,7 +32,7 @@ def escrever_no_arquivo(dados, nome_do_arquivo):
         idade = dados['idade']
 
         arquivo = open(nome_do_arquivo, 'a')
-        arquivo.write(f'{nome};{idade}')
+        arquivo.write(f'{nome};{idade}\n')
     except Exception:
         print('Não foi possível escrever os dados no arquivo de banco de dados.')
     else:

@@ -17,3 +17,14 @@ def menu(opcoes):
     linha()
     resposta = leia_int('Opção: ')
     return resposta
+
+
+def formatar_dados(dados):
+    dados.pop()
+    print(f'{"NOME":<30}{"IDADE":<15}')
+    linha()
+    for dado in dados:
+        p = dado.split(';')
+        nome = p[0]
+        idade = p[1]
+        print(f'{nome:<30}{idade:<15}')
