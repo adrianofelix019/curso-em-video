@@ -1,3 +1,4 @@
+from time import sleep
 from lib.dados import leia_int
 
 
@@ -28,3 +29,4 @@ def formatar_dados(dados):
         nome = p[0]
         idade = p[1]
         print(f'{nome:<30}{idade:<15}')
+    sleep(1)

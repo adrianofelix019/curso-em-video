@@ -1,4 +1,5 @@
 import os
+from time import sleep
 from lib.interface import cabecalho
 
 
@@ -33,6 +34,9 @@ def escrever_no_arquivo(dados, nome_do_arquivo):
 
         arquivo = open(nome_do_arquivo, 'a')
         arquivo.write(f'{nome};{idade}\n')
+
+        print(f'\033[92m{nome.title()} cadastrado(a) com sucesso.\033[0m')
+        sleep(1)
     except Exception:
         print('Não foi possível escrever os dados no arquivo de banco de dados.')
     else:
