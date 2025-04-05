@@ -39,5 +39,3 @@ def escrever_no_arquivo(dados, nome_do_arquivo):
         sleep(1)
     except Exception:
         print('Não foi possível escrever os dados no arquivo de banco de dados.')
-    else:
-        print(f'{nome} cadastrado(a) com sucesso.')
